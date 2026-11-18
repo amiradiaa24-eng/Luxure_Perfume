@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout | LUXURE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header>
+        <nav class="navbar">
+
+            <h2 class="logo">LUXURE</h2>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#women">Women</a></li>
+                <li><a href="index.html#men">Men</a></li>
+            </ul>
+
+            <a class="cart" href="cart.html">Cart 🛍️</a>
+
+        </nav>
+    </header>
+
+    <!-- CHECKOUT -->
+    <section class="checkout-section">
+
+        <div class="checkout-heading">
+            <p>COMPLETE YOUR PURCHASE</p>
+            <h1>Checkout</h1>
+            <span>Please enter your delivery information</span>
+        </div>
+
+        <form class="checkout-form" id="checkout-form">
+
+            <label for="full-name">Full Name</label>
+            <input
+                type="text"
+                id="full-name"
+                placeholder="Enter your full name"
+                required
+            >
+
+            <label for="phone">Phone Number</label>
+            <input
+                type="tel"
+                id="phone"
+                placeholder="Enter your phone number"
+                required
+            >
+
+            <label for="governorate">Governorate</label>
+            <select id="governorate" required>
+                <option value="">Select Governorate</option>
+                <option value="Cairo">Cairo</option>
+                <option value="Giza">Giza</option>
+                <option value="Alexandria">Alexandria</option>
+                <option value="Aswan">Aswan</option>
+                <option value="Luxor">Luxor</option>
+                <option value="Qena">Qena</option>
+                <option value="Assiut">Assiut</option>
+                <option value="Sohag">Sohag</option>
+                <option value="Minya">Minya</option>
+                <option value="Red Sea">Red Sea</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <label for="address">Full Address</label>
+            <textarea
+                id="address"
+                rows="4"
+                placeholder="Enter your full address"
+                required
+            ></textarea>
+
+            <label for="payment-method">Payment Method</label>
+            <select id="payment-method" required>
+                <option value="">Choose Payment Method</option>
+                <option value="Cash on Delivery">Cash on Delivery</option>
+                <option value="Online Payment">Online Payment</option>
+            </select>
+
+            <button type="submit">PLACE ORDER</button>
+
+        </form>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <h2>LUXURE PERFUME</h2>
+        <p>The Art of Fragrance</p>
+    </footer>
+
+    <script src="checkout.js"></script>
+
+</body>
+</html>
